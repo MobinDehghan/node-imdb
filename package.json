@@ -1,0 +1,47 @@
+{
+  "name": "node-imdb",
+  "version": "0.0.1",
+  "description": "scrap data from imdb",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint .",
+    "prepare": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MobinDehghan/node-imdb.git"
+  },
+  "keywords": [
+    "imdb"
+  ],
+  "author": "mobin dehghan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MobinDehghan/node-imdb/issues"
+  },
+  "homepage": "https://github.com/MobinDehghan/node-imdb#readme",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "tslib": "^2.3.1",
+    "typescript": "^4.3.5"
+  }
+}

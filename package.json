@@ -1,6 +1,6 @@
 {
   "name": "node-imdb",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "scrap data from imdb",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

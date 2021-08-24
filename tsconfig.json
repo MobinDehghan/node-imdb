@@ -7,7 +7,6 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "removeComments": true,
-    "importHelpers": true,
     "strict": true,
     "moduleResolution": "node",
     // "allowSyntheticDefaultImports": true,        /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */

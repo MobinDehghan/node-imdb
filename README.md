@@ -5,21 +5,21 @@ a nodejs library to gets data from imdb
 # Example
 
 ```javascript
-const imdb = require('node-imdb').default;
+const { searchMovie, getMovie } = require('node-imdb');
 // or
-import imdb from 'node-imdb';
+import { searchMovie, getMovie } from 'node-imdb';
 ```
 
 ```javascript
 async function searchMovieExample(title) {
-  const result = await imdb.searchMovie(title);
+  const result = await searchMovie(title);
   console.log(result);
 }
 
 searchMovieExample('Game of Thorns');
 
 async function getMovieExample(id) {
-  const result = await imdb.getMovie(id);
+  const result = await getMovie(id);
   console.log(result);
 }
 

@@ -1,8 +1,13 @@
-import searchMovie from '../src/searchMovie';
+import searchMovie, { ISearchMovieResult } from '../src/searchMovie';
+
+let movies: ISearchMovieResult[];
+
+beforeAll(async () => {
+  movies = await searchMovie('servant');
+});
 
 describe('search movie', () => {
   it('should return an array greater than 0', async () => {
-    const movies = await searchMovie('servant');
     expect(movies.length).toBeGreaterThan(0);
   });
 
@@ -12,22 +17,22 @@ describe('search movie', () => {
   });
 
   it('should first element contains title, id, image', async () => {
-    const [movie] = await searchMovie('servant');
+    const [movie] = movies;
     expect(Object.keys(movie)).toEqual(['title', 'id', 'image']);
   });
 
   it('should first element has a title', async () => {
-    const [movie] = await searchMovie('servant');
+    const [movie] = movies;
     expect(movie.title).toBeTruthy();
   });
 
   it('should first element has a id', async () => {
-    const [movie] = await searchMovie('servant');
+    const [movie] = movies;
     expect(movie.id).toBeTruthy();
   });
 
   it('should first element has a image', async () => {
-    const [movie] = await searchMovie('servant');
+    const [movie] = movies;
     expect(movie.image).toBeTruthy();
   });
 });

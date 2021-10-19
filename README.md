@@ -1,6 +1,6 @@
 # node-imdb
 
-a nodejs library to gets data from imdb
+a nodejs library to get data from imdb
 
 # Example
 

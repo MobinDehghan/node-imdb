@@ -29,7 +29,7 @@ async function getMovie(id: string): Promise<IGetMovieResult | false> {
     const time = $('.TitleBlock__TitleMetaDataContainer-sc-1nlhx7j-2 > ul > li')
       .last()
       .text();
-    const poster = $('.ipc-media--poster > img').attr('src');
+    const poster = $('.ipc-media--poster-27x40 > img').attr('src');
     const story = $('.ipc-html-content--base > div')
       .first()
       .html()
